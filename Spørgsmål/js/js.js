@@ -1,7 +1,7 @@
-const options = document.querySelectorAll(".option");
-const dropzone = document.getElementById("dropzone");
-const correctAnswer = "opt4"; // Rigtige svar
-const slots = {
+let options = document.querySelectorAll(".option");
+let dropzone = document.getElementById("dropzone");
+let correctAnswer = "opt4"; // Rigtige svar
+let slots = {
     "opt1": document.getElementById("slot1"),
     "opt2": document.getElementById("slot2"),
     "opt3": document.getElementById("slot3"),
@@ -39,5 +39,21 @@ dropzone.addEventListener("drop", (event) => {
 });
 
 function goNext() {
-    alert("Går videre til næste spørgsmål!");
-}
+    window.location.href = "side2.html";
+};
+
+function goNext2() {
+    window.location.href = "side3.html";
+};
+
+function goNext3() {
+    window.location.href = "side4.html";
+};
+
+function goNext4() {
+    window.location.href = "side5.html";
+};
+
+function goNext5() {
+    window.location.href = "index.html";
+};
